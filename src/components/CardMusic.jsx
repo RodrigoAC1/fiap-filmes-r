@@ -3,7 +3,7 @@
 import { HeartIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 
-export default function CardFilme({filme}){
+export default function CardMusic({music}){
     const [favorito, setFavorito] = useState(true)
 
     return (
@@ -13,12 +13,12 @@ export default function CardFilme({filme}){
             :
                 <HeartIcon onClick={() => setFavorito(true)}  className="h-6 w-6 text-slate-100 cursor-pointer" />
             }
-            <img className='rounded' src={filme.poster} alt="" />
+            <img className='rounded' src={music.poster} alt="" />
             <span className='font-bold text-center line-clamp-1'>
-                {filme.titulo}
+                {music.titulo}
             </span>
             <div>
-                <span>{filme.nota}</span>
+                <span>{music.nota}</span>
             </div>
             <a href="#" className='bg-pink-600 py-2 w-full rounded text-center'>
                 detalhes
