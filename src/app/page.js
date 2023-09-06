@@ -1,49 +1,42 @@
+import CardFilme from '@/components/Cardmusic'
 import Title from '@/components/Title'
-import Image from 'next/image'
 
 export default function Home() {
+  const filmes = [
+    {
+      titulo: "Anos Luz",
+      nota: 6.2,
+      poster: "https://th.bing.com/th/id/OIP.fiADlluS74qB0Gn4vCfDUAHaHa?w=160&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      titulo: "Cartão black",
+      nota: 7.5,
+      poster: "https://th.bing.com/th/id/OIP.qU79_MPl1mg7A8OOgBwVWgHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7"
+    }
+  ]
+
   return ( //JSX
     <>
-      <nav className="flex p-4 bg-green-700">
-        <ul className="flex gap-20">
-          <li>
-            <a href="#">
-              <h1>Fiap Music</h1>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              favoritos
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Musicas
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Podcast
-            </a>
-          </li>
+      <nav className="bg-green-700 p-4">
+        <ul>
+          <li><a href="#"><h1 className="text-3xl font-bold">Fiap Musics</h1></a></li>
         </ul>
-
+        <ul>
+          <li><a href="#">favoritos</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Musicas</a></li>
+        </ul>
+        
       </nav>
 
      <Title>em alta</Title>
 
-      <div id="card" className='flex flex-col w-40 justify-center items-center m-2'>
-        <img className='rounded' src="https://place-hold.it/150x220/666" alt="" />
-        <span className='font-bold text-center line-clamp-1'>Nome da musica</span>
-        <div>
-          <span>6.0</span>
-        </div>
-        <a href="#" className='bg-red-600 py-2 w-full rounded text-center'>
-          detalhes
-        </a>
-      </div>
+      <section className='flex flex-wrap'>
+        {filmes.map(filme => <CardFilme filme={filme} /> )}
+      </section>
 
-     <Title>Novas</Title>
+     <Title>lançamentos</Title>
      <Title>favoritos</Title>
    
     </>
