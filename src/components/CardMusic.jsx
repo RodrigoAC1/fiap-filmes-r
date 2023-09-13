@@ -7,16 +7,20 @@ export default function CardMusic({music}){
     const [favorito, setFavorito] = useState(true)
     const url_imagem = `${music.image}`
 
+    function favoritar(){
+        setFavorito(true)
+    }
+
     return (
         <div id="card" className='flex flex-col w-40 justify-center items-center m-2'>
             { favorito ? 
                 <HeartIcon onClick={() => setFavorito(false)} className="h-6 w-6 text-rose-600 cursor-pointer " />
             :
-                <HeartIcon onClick={() => setFavorito(true)}  className="h-6 w-6 text-slate-100 cursor-pointer" />
+                <HeartIcon onClick={favoritar}  className="h-6 w-6 text-slate-100 cursor-pointer" />
             }
             <img className='rounded' src={url_imagem} alt="" />
             <span className='font-bold text-center line-clamp-1'>
-                {music.name}
+                {music.name} - {music.artist}
             </span>
             <div>
                 <span>{music.rank}°</span>

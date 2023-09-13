@@ -21,10 +21,7 @@ export default async function Home() {
         <ul>
           <li><a href="#">favoritos</a></li>
         </ul>
-        <ul>
-          <li><a href="#">filmes</a></li>
-        </ul>
-        
+
       </nav>
 
      <Title>em alta</Title>
