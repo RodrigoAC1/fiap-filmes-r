@@ -1,0 +1,56 @@
+{
+  "favoritos": [
+    {
+      "watchlist": true,
+      "id": 1
+    },
+    {
+      "watchlist": true,
+      "id": 2
+    },
+    {
+      "watchlist": false,
+      "id": 3
+    },
+    {
+      "watchlist": true,
+      "id": 4
+    },
+    {
+      "watchlist": false,
+      "id": 5
+    },
+    {
+      "watchlist": true,
+      "id": 6
+    },
+    {
+      "watchlist": false,
+      "id": 7
+    },
+    {
+      "watchlist": true,
+      "id": 8
+    },
+    {
+      "watchlist": false,
+      "id": 9
+    },
+    {
+      "watchlist": true,
+      "id": 10
+    },
+    {
+      "name": "Paint The Town Red",
+      "artist": "Doja Cat",
+      "watchlist": true,
+      "id": 11
+    },
+    {
+      "name": "Hey Driver",
+      "artist": "Zach Bryan Featuring The War And Treaty",
+      "watchlist": true,
+      "id": 12
+    }
+  ]
+}
