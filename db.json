@@ -51,6 +51,18 @@
       "artist": "Zach Bryan Featuring The War And Treaty",
       "watchlist": true,
       "id": 12
+    },
+    {
+      "name": "Vampire",
+      "artist": "Olivia Rodrigo",
+      "watchlist": true,
+      "id": 13
+    },
+    {
+      "name": "Paint The Town Red",
+      "artist": "Doja Cat",
+      "watchlist": false,
+      "id": 14
     }
   ]
 }
