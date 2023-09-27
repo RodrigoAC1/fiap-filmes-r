@@ -1,4 +1,5 @@
 import CardMusic from '@/components/CardMusic'
+import NavBar from '@/components/NavBar'
 import Title from '@/components/Title'
 
 async function carregarMusics(){
@@ -10,19 +11,12 @@ async function carregarMusics(){
 
 export default async function Home() {
   
+  
   const Music = await carregarMusics()
 
   return ( //JSX
     <>
-      <nav className="bg-green-700 p-4">
-        <ul>
-          <li><a href="#"><h1 className="text-3xl font-bold">Fiap Music</h1></a></li>
-        </ul>
-        <ul>
-          <li><a href="#">favoritos</a></li>
-        </ul>
-
-      </nav>
+     <NavBar />
 
      <Title>em alta</Title>
 
